@@ -1,0 +1,8 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <% var title = page.title; %>
+  <title><% if (title){ %><%= title %> | <% } %><%= config.title %></title>
+  <meta charset="utf-8" />
+  <%- css('css/style.min') %>
+</head>

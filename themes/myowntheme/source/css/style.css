@@ -1,0 +1,114 @@
+@font-face {
+  font-family: slabo;
+  src: url(../fonts/Slabo27px-Regular.ttf);
+}
+html,
+body {
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  font-family: slabo;
+}
+a,
+a:hover {
+  color: white;
+}
+h1 {
+  text-transform: uppercase;
+}
+.row {
+  height: 100%;
+}
+.clear {
+  clear: both;
+}
+#leftSidebar {
+  background-color: #344043;
+  padding-right: 0px;
+  color: white;
+  margin-bottom: 0px;
+}
+@media (min-width: 768px) {
+  #leftSidebar {
+    padding-left: 0px;
+    height: 100%;
+    float: none;
+    display: table-cell;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  #content {
+    float: none;
+    display: table-cell;
+    position: absolute;
+    right: 0;
+  }
+  .row {
+    display: table;
+  }
+}
+#mobileHeader h1 {
+  font-size: 20px;
+}
+#intro {
+  float: left;
+  width: 100%;
+  background-color: #242C2E;
+  margin-bottom: 40px;
+}
+#intro img {
+  width: 40%;
+  margin: 0 auto;
+  display: block;
+  margin-top: 30px;
+  border-radius: 50%;
+  border: solid 2px white;
+}
+#name {
+  text-align: center;
+}
+#name h1 {
+  font-size: x-large;
+}
+#menu ul {
+  list-style: none;
+}
+#menu ul li {
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+  height: 32px;
+  background-repeat: no-repeat;
+  padding-top: 7px;
+  float: none;
+}
+#menu ul li a {
+  color: #9d9d9d;
+}
+#menu ul li .active-menu {
+  color: white;
+}
+#menu ul li div {
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  border-radius: 50%;
+  background: white;
+  margin-right: 5px;
+}
+#menu ul li img {
+  margin: 5px;
+  width: 20px;
+}
+@media (min-width: 1000px) {
+  #menu ul {
+    margin-left: 20px;
+  }
+  #menu ul li a {
+    font-size: 18px;
+  }
+  #menu ul li a div {
+    margin-right: 20px;
+  }
+}
