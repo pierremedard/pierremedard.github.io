@@ -17,9 +17,13 @@ html, body {
 a, a:hover {
 	color: white;
 }
-
+	
 h1 {
 	text-transform: uppercase;
+}
+
+section h1 {
+	margin-top: 0px;
 }
 
 .row {
@@ -30,15 +34,16 @@ h1 {
 	clear: both;
 }
 
-#leftSidebar {
+#left-sidebar {
 	background-color: @bg_sidebar;
 	padding-right: 0px;
 	color: white;
   margin-bottom: 0px;
+  border-radius: 0px;
 }
 
 @media (min-width: 768px) {
-	#leftSidebar {
+	#left-sidebar {
 		padding-left: 0px;
 		height: 100%;
 		float: none;
@@ -58,7 +63,7 @@ h1 {
 	}
 }
 
-#mobileHeader h1 {
+#mobile-header h1 {
 	font-size: 20px;
 }
 
@@ -67,6 +72,7 @@ h1 {
 	width: 100%;
 	background-color: @bg_top_sidebar;
 	margin-bottom: 40px;
+	height: 250px;
 	img {
 	  width: 40%;
 	  margin: 0 auto;
@@ -124,5 +130,36 @@ h1 {
 				margin-right: 20px;
  			}
 	  }
+	}
+}
+
+#content {
+	padding-left: 0px;
+	padding-right: 0px;
+	.header-content {
+		height: 250px;
+    background-position-x: center;
+    background-repeat: no-repeat;
+	}
+	#about-me-content .header-content {
+		background-image: url('../img/about-me-header.jpg');
+    background-position-y: -200px;
+	}
+	#job-content .header-content {
+		background-image: url('../img/job-header.png');
+    background-position-y: -100px;
+    background-color: black;
+	}
+	#skills-content .header-content {
+		background-image: url('../img/skills-header.jpg');
+    background-color: rgb(39, 40, 34);		
+	}
+	#education-content .header-content {
+		background-image: url('../img/education-header.jpg');
+		background-size: 100%;
+	}
+	#contact-content .header-content {
+		background-image: url('../img/contact-header.png');
+    background-position-y: center;
 	}
 }

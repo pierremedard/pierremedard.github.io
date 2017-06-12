@@ -22,7 +22,7 @@ module.exports = function(grunt) {
     },
     cssmin: {
       target: {
-        files: { 'source/css/style.min.css': ['source/css/*.css'] }
+        files: { 'source/css/style.min.css': ['source/css/style.css'] }
       }
     },
     uglify: {
