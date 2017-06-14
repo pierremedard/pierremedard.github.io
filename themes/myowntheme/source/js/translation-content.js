@@ -22,4 +22,15 @@ $(document).ready(function() {
 	    });
 		}
 	});
+
+	// var start_rotating = function(i, length) {
+	// 	logo = $('.logo-skills-' + (i + 1)).first();
+	// 	logo.addClass('rotating');
+	// 	logo.fadeIn();
+	// 	if (i < length) {
+	// 		setTimeout(start_rotating.bind(null, i + 1, length), 2000);
+	// 	}
+	// }
+	// var logo_skills_number = $('#skills-circle img').size();
+	// setTimeout(start_rotating.bind(null, 0, logo_skills_number), 0);
 });

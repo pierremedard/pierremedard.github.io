@@ -1,4 +1,12 @@
-<section id="job-content" style="display: none;">
+<section id="job-content" style="display:none;">
 	<div class="header-content"></div>
-	<h1>Experience</h1>
+	<div class="text-content">
+		<% get_jobs().forEach(function(job) { %>
+			<div>
+				<h1><%= job.title %></h1>
+				<p class="job-short-description"><%= job.short_description %></p>
+				<p class="job-description"><%= job.long_description %></p>
+			</div>
+		<% }); %>
+	</div>
 </section>

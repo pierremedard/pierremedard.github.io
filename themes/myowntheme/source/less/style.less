@@ -7,15 +7,12 @@
   src: url(../fonts/Slabo27px-Regular.ttf);
 }
 
-html, body {
+html, body, p {
 	height: 100%;
 	margin: 0px;
 	padding: 0px;
 	font-family: slabo;
-}
-
-a, a:hover {
-	color: white;
+	font-style: bold;
 }
 	
 h1 {
@@ -37,9 +34,12 @@ section h1 {
 #left-sidebar {
 	background-color: @bg_sidebar;
 	padding-right: 0px;
-	color: white;
   margin-bottom: 0px;
   border-radius: 0px;
+	color: white;
+  a, a:hover {
+		color: white;
+	}
 }
 
 @media (min-width: 768px) {
@@ -72,9 +72,10 @@ section h1 {
 	width: 100%;
 	background-color: @bg_top_sidebar;
 	margin-bottom: 40px;
-	height: 250px;
+	height: 249px;
 	img {
 	  width: 40%;
+	  max-width: 130px;
 	  margin: 0 auto;
 	  display: block;
 	  margin-top: 30px;
@@ -136,6 +137,10 @@ section h1 {
 #content {
 	padding-left: 0px;
 	padding-right: 0px;
+	.text-content {
+		padding-left: 20px;
+		padding-top: 20px;
+	}
 	.header-content {
 		height: 250px;
     background-position-x: center;
@@ -156,10 +161,69 @@ section h1 {
 	}
 	#education-content .header-content {
 		background-image: url('../img/education-header.jpg');
-		background-size: 100%;
+		background-size: 100% 250px;
 	}
 	#contact-content .header-content {
 		background-image: url('../img/contact-header.png');
     background-position-y: center;
 	}
+}
+
+#about-me-content {
+	h1 {
+    padding-left: 20px;
+	}
+}
+
+#job-content {
+	h1 {
+		margin-bottom: 0px;
+		font-size: 24px;
+	}
+	.job-short-description {
+		margin-top: -5px;
+		text-transform: underline;
+		margin-bottm: 15px;
+    margin-left: 10px;
+    font-style: italic;
+    color: grey;
+    text-decoration: underline;
+	}
+	.job-description {
+		margin-bottom: 20px;
+	}
+	.text-content {
+		width: 90%;
+	}
+}
+
+@keyframes rot {
+	from {
+		transform: rotate(0deg)
+		           translate(-200px)
+		           rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg)
+		           translate(-200px) 
+		           rotate(-360deg);
+	}
+}
+
+#skills-content {
+	// .text-content {
+		// #skills-circle {
+		// 	position: absolute;
+	 //    left: 50%;
+	 //    top: 50%;
+	 //    img {
+		// 		position: absolute;
+		// 		height: 80px;
+		// 		display: none;
+	 //    }
+		// 	.rotating {
+		// 		animation: rot 22s infinite linear;
+		// 	}
+		// }
+	// }
 }
